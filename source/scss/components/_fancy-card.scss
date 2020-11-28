@@ -1,0 +1,26 @@
+.fancy-card {
+  height: 420px;
+  overflow: visible;
+
+  &-image {
+    height: calc(100% + 40px);
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &-content {
+    white-space: wrap;
+    line-height: 2.5;
+    max-height: 280px;
+  }
+
+  &-title {
+    margin-top: -20px;
+  }
+}

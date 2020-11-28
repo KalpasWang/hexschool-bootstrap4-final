@@ -1,0 +1,60 @@
+.blurred-menu-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #fff;
+  height: 256px;
+  writing-mode: vertical-lr;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all .3s;
+  
+  &-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary;
+    background-size: cover;
+    opacity: .8;
+    transition: all .3s;
+    z-index: 10;
+  }
+  
+  &:hover &-overlay {
+    background-color: $accent;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &.active {
+    color: $primary;
+  }
+
+  &.active &-overlay{
+    background-color: $accent;
+  }
+}
+
+.menu-title-vertical {
+  letter-spacing: 8px;
+  font-size: 24px;
+  z-index: 20;
+  text-decoration: none;
+}

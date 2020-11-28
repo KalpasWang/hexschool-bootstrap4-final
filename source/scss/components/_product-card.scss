@@ -1,0 +1,60 @@
+.product-card {
+  color: $primary;
+  
+  &-image {
+    height: 315px;
+    position: relative;
+  }
+
+  &-favorite {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  &-highlight {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: $white;
+    font-weight: 700;
+    background: $primary;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+  }
+
+  &-detail {
+    border-left: 1px solid $secondary;
+    border-right: 1px solid $secondary;
+  }
+
+  &-title {
+    font-size: 20px;
+    text-align: center;
+    border-right: 1px solid $secondary;
+  } 
+
+  &-price {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+  } 
+  
+  &-btn {
+    background-color: $secondary;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+      background-color: $primary;
+      color: $secondary;
+    }
+  }
+}

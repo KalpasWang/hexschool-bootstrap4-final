@@ -1,0 +1,30 @@
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-md-vertical {
+  @include media-breakpoint-up(md) {
+    writing-mode: vertical-rl;
+  }
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.pure-btn {
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.pure-input {
+  outline: none;
+  border: none;
+}
+
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
