@@ -1,11 +1,21 @@
 .fancy-card {
-  height: 420px;
-  overflow: visible;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    height: 420px;
+    overflow: visible;
+  }
 
   &-image {
-    height: calc(100% + 40px);
-    margin-top: -20px;
-    margin-bottom: -20px;
+    height: 250px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      height: calc(100% + 40px);
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
   }
 
   &-body {
@@ -15,9 +25,14 @@
   }
   
   &-content {
-    white-space: wrap;
-    line-height: 2.5;
-    max-height: 280px;
+    line-height: 2;
+    max-height: auto;
+    
+    @include media-breakpoint-up(md) {
+      max-height: 280px;
+      white-space: wrap;
+      line-height: 2.5;
+    }
   }
 
   &-title {

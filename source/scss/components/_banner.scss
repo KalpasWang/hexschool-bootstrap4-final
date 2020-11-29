@@ -1,6 +1,10 @@
 .banner {
-  height: 496px;
+  height: 277px;
   position: relative;
+  
+  @include media-breakpoint-up(md) {
+    height: 496px;
+  }
 
   &-main-image {
     height: 100%;

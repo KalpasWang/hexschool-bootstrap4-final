@@ -8408,9 +8408,22 @@ a.text-accessory:hover, a.text-accessory:focus {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
+@media (max-width: 767.98px) {
+  .px-md-down-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+@media (max-width: 767.98px) {
+  .mx-md-down-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }
+
 .banner {
-  height: 496px;
+  height: 277px;
   position: relative; }
+  @media (min-width: 768px) {
+    .banner {
+      height: 496px; } }
   .banner-main-image {
     height: 100%;
     background-size: cover;
@@ -8426,14 +8439,17 @@ a.text-accessory:hover, a.text-accessory:focus {
   justify-content: center;
   align-items: center;
   border-left: 1px solid #fff;
-  height: 256px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   color: #fff;
   text-decoration: none;
   overflow: hidden;
-  transition: all .3s; }
+  transition: all .3s;
+  height: 180px; }
+  @media (min-width: 768px) {
+    .blurred-menu-item {
+      height: 256px; } }
   .blurred-menu-item-image {
     position: absolute;
     top: 0;
@@ -8471,20 +8487,32 @@ a.text-accessory:hover, a.text-accessory:focus {
   text-decoration: none; }
 
 .fancy-card {
-  height: 420px;
-  overflow: visible; }
+  height: auto; }
+  @media (min-width: 768px) {
+    .fancy-card {
+      height: 420px;
+      overflow: visible; } }
   .fancy-card-image {
-    height: calc(100% + 40px);
-    margin-top: -20px;
-    margin-bottom: -20px; }
+    height: 250px;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .fancy-card-image {
+        height: calc(100% + 40px);
+        margin-top: -20px;
+        margin-bottom: -20px; } }
   .fancy-card-body {
     display: flex;
     justify-content: center;
     align-items: center; }
   .fancy-card-content {
-    white-space: wrap;
-    line-height: 2.5;
-    max-height: 280px; }
+    line-height: 2;
+    max-height: auto; }
+    @media (min-width: 768px) {
+      .fancy-card-content {
+        max-height: 280px;
+        white-space: wrap;
+        line-height: 2.5; } }
   .fancy-card-title {
     margin-top: -20px; }
 
@@ -8560,5 +8588,15 @@ a.text-accessory:hover, a.text-accessory:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+
+@media (max-width: 767.98px) {
+  .px-md-down-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+@media (max-width: 767.98px) {
+  .mx-md-down-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }
 
 /*# sourceMappingURL=all.css.map */

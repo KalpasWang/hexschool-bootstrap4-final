@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   border-left: 1px solid #fff;
-  height: 256px;
   writing-mode: vertical-lr;
   color: #fff;
   text-decoration: none;
   overflow: hidden;
   transition: all .3s;
+  height: 180px;
+  
+  @include media-breakpoint-up(md) {
+    height: 256px;
+  }
   
   &-image {
     position: absolute;

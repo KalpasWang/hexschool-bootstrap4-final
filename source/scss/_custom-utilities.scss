@@ -28,3 +28,17 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.px-md-down-0 {
+  @include media-breakpoint-down(sm) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.mx-md-down-0 {
+  @include media-breakpoint-down(sm) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
