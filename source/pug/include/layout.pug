@@ -21,14 +21,17 @@ html(lang="en")
     meta(property='og:image:width' content='40')
     meta(property='og:image:height' content='40')
   body
-    header
-      nav.navbar.navbar-expand-md.navbar-light.bg-white.py-4.my-1
-        .container
+    header.py-4.my-1
+      nav.navbar.navbar-expand-md.navbar-light.bg-white
+        .container-md.px-4.px-md-0
           button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
           a.navbar-brand.mr-0(href='#')
             img.d-none.d-md-inline-block(src="img/logo-all-dark.svg" width="220" height="40")
             img.d-inline-block.d-md-none(src="img/logotype-sm-dark.svg" height="18")
+
+          a.nav-link.pl-md-5.ml-md-3.order-md-1(href="cart.html")
+            i.fas.fa-shopping-cart
 
           #navbarSupportedContent.collapse.navbar-collapse
             ul.navbar-nav.ml-auto
@@ -41,25 +44,23 @@ html(lang="en")
               li.nav-item
                 a.nav-link(href='#') 登入
 
-          a.nav-link(href="cart.html" style="padding-left: 49px;")
-            i.fas.fa-shopping-cart
-
     block content
 
     section.bg-primary
-      .container
+      .container-md.px-4.px-md-0
         .row.justify-content-center
           .col-md-5.d-flex.align-items-center
-            img.mr-4.my-5(src="./img/logo-light.svg", alt="logo", height="40")
-            span.text-lg.text-secondary 訂閱你我的甜蜜郵件
+            .mx-auto.mx-md-0.mt-5.mt-md-0
+              img.mr-4(src="./img/logo-light.svg", alt="logo", height="40")
+              span.text-sm-lg.text-secondary.align-middle 訂閱你我的甜蜜郵件
           .col-md-5
             form.position-relative.text-primary.my-5.w-100.d-flex
-              i.fas.fa-envelope.position-absolute.ml-4.vertical-center
-              input.pl-6.pr-2.py-3.pure-input.flex-grow-1(type="email")
+              i.fas.fa-envelope.position-absolute.ml-4.vertical-center.d-none.d-sm-inline
+              input.pl-sm-6.pr-2.py-3.pure-input.flex-grow-1.flex-shrink-1(type="email")
               button.pure-btn.px-4.py-3.bg-accent(style="margin-left: -5px;")
                 i.fas.fa-arrow-right
     footer.bg-secondary.text-primary
-      .container
+      .container-md.px-4.px-md-0
         .row.justify-content-center.py-5
           .col-md-5
             img(src="./img/logotype.svg", alt="logo type" height="27")
@@ -72,7 +73,7 @@ html(lang="en")
               img(src="./img/ic-facebook.svg", alt="fb" width="32")
           .col-md-5.d-md-flex.flex-column.align-items-end.justify-content-between
             img.d-none.d-md-inline-block(src="./img/sm-今天是個吃甜點的好日子.svg", alt="slogan" width="60")
-            span.d-inline-block.mt-4 &copy; 2018 Sweetaste* All Rights Reserved
+            span.d-inline-block.mt-4.text-md-right &copy; 2018 Sweetaste* All Rights Reserved
 
     script(src="./js/vendor.js")
 

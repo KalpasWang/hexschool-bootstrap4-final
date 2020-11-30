@@ -8391,8 +8391,11 @@ a.text-accessory:hover, a.text-accessory:focus {
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl; } }
 
-.text-lg {
-  font-size: 24px; }
+.text-sm-lg {
+  font-size: 20px; }
+  @media (min-width: 576px) {
+    .text-sm-lg {
+      font-size: 24px; } }
 
 .pure-btn {
   outline: none;
@@ -8512,6 +8515,9 @@ a.text-accessory:hover, a.text-accessory:focus {
       .fancy-card-content {
         max-height: 280px;
         white-space: wrap;
+        line-height: 1.5; } }
+    @media (min-width: 992px) {
+      .fancy-card-content {
         line-height: 2.5; } }
   .fancy-card-title {
     margin-top: -20px; }
@@ -8572,8 +8578,11 @@ a.text-accessory:hover, a.text-accessory:focus {
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl; } }
 
-.text-lg {
-  font-size: 24px; }
+.text-sm-lg {
+  font-size: 20px; }
+  @media (min-width: 576px) {
+    .text-sm-lg {
+      font-size: 24px; } }
 
 .pure-btn {
   outline: none;

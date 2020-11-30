@@ -20,17 +20,17 @@
     <meta property="og:image:height" content="40"/>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-white py-4 my-1">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand mr-0" href="#"><img class="d-none d-md-inline-block" src="img/logo-all-dark.svg" width="220" height="40"/><img class="d-inline-block d-md-none" src="img/logotype-sm-dark.svg" height="18"/></a>
+    <header class="py-4 my-1">
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container-md px-4 px-md-0">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand mr-0" href="#"><img class="d-none d-md-inline-block" src="img/logo-all-dark.svg" width="220" height="40"/><img class="d-inline-block d-md-none" src="img/logotype-sm-dark.svg" height="18"/></a><a class="nav-link pl-md-5 ml-md-3 order-md-1" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="#">甜點</a></li>
               <li class="nav-item"><a class="nav-link" href="#">登入</a></li>
             </ul>
-          </div><a class="nav-link" href="cart.html" style="padding-left: 49px;"><i class="fas fa-shopping-cart"></i></a>
+          </div>
         </div>
       </nav>
     </header>
@@ -90,13 +90,13 @@
               <div class="fancy-card-image bg-cover" style="background-image: url(https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=621c4e9986fba1c4514dfdc30e095bd2&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60)"></div>
             </div>
             <div class="col-md-6 d-flex justify-content-start h-100 order-md-1">
-              <div class="fancy-card-body text-md-vertical">
+              <div class="fancy-card-body flex-grow-1 text-md-vertical">
                 <div class="fancy-card-content text-accessory p-5 p-md-0">
                   <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
                   <p>是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
                 </div>
               </div>
-              <div class="fancy-card-title ml-8 d-none d-md-block"><img src="./img/lg-為什麼一定要吃甜點.svg" width="89"/></div>
+              <div class="fancy-card-title d-none d-md-block"><img src="./img/lg-為什麼一定要吃甜點.svg" width="89"/></div>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container-md px-4 px-md-0">
         <div class="row">
           <div class="col-md-4 mb-6">
             <div class="product-card">
@@ -161,12 +161,14 @@
       </div>
     </section>
     <section class="bg-primary">
-      <div class="container">
+      <div class="container-md px-4 px-md-0">
         <div class="row justify-content-center">
-          <div class="col-md-5 d-flex align-items-center"><img class="mr-4 my-5" src="./img/logo-light.svg" alt="logo" height="40"/><span class="text-lg text-secondary">訂閱你我的甜蜜郵件</span></div>
+          <div class="col-md-5 d-flex align-items-center">
+            <div class="mx-auto mx-md-0 mt-5 mt-md-0"><img class="mr-4" src="./img/logo-light.svg" alt="logo" height="40"/><span class="text-sm-lg text-secondary align-middle">訂閱你我的甜蜜郵件</span></div>
+          </div>
           <div class="col-md-5">
-            <form class="position-relative text-primary my-5 w-100 d-flex"><i class="fas fa-envelope position-absolute ml-4 vertical-center"></i>
-              <input class="pl-6 pr-2 py-3 pure-input flex-grow-1" type="email"/>
+            <form class="position-relative text-primary my-5 w-100 d-flex"><i class="fas fa-envelope position-absolute ml-4 vertical-center d-none d-sm-inline"></i>
+              <input class="pl-sm-6 pr-2 py-3 pure-input flex-grow-1 flex-shrink-1" type="email"/>
               <button class="pure-btn px-4 py-3 bg-accent" style="margin-left: -5px;"><i class="fas fa-arrow-right"></i></button>
             </form>
           </div>
@@ -174,7 +176,7 @@
       </div>
     </section>
     <footer class="bg-secondary text-primary">
-      <div class="container">
+      <div class="container-md px-4 px-md-0">
         <div class="row justify-content-center py-5">
           <div class="col-md-5"><img src="./img/logotype.svg" alt="logo type" height="27"/>
             <ul class="list-unstyled mt-9 mb-5 pt-2">
@@ -184,7 +186,7 @@
             </ul>
             <div><img class="mr-1" src="./img/ic-line@.svg" alt="ig" width="32"/><img src="./img/ic-facebook.svg" alt="fb" width="32"/></div>
           </div>
-          <div class="col-md-5 d-md-flex flex-column align-items-end justify-content-between"><img class="d-none d-md-inline-block" src="./img/sm-今天是個吃甜點的好日子.svg" alt="slogan" width="60"/><span class="d-inline-block mt-4">&copy; 2018 Sweetaste* All Rights Reserved</span></div>
+          <div class="col-md-5 d-md-flex flex-column align-items-end justify-content-between"><img class="d-none d-md-inline-block" src="./img/sm-今天是個吃甜點的好日子.svg" alt="slogan" width="60"/><span class="d-inline-block mt-4 text-md-right">&copy; 2018 Sweetaste* All Rights Reserved</span></div>
         </div>
       </div>
     </footer>

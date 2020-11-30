@@ -74,9 +74,7 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('reload', function(){
-  browserSync.reload({
-    stream: true 
-  });
+  browserSync.stream();
 });
 
 gulp.task('watch', function () {
