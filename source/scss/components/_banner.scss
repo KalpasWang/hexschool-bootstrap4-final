@@ -5,16 +5,27 @@
   @include media-breakpoint-up(md) {
     height: 496px;
   }
-
+  
   &-main-image {
     height: 100%;
     background-size: cover;
     background-position: center center;
   }
-
+  
   &-heading-vertical {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 30px;
+    right: 30px;
+    @include media-breakpoint-up(md) {
+      top: 40px;
+      right: 40px;
+    }
+
+    & > img {
+      width: 59px;
+      @include media-breakpoint-up(md) {
+        width: 89px;
+      }
+    }
   }
 }

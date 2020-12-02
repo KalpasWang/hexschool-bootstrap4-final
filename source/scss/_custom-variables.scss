@@ -189,7 +189,7 @@ $body-color:                $gray-900 !default;
 
 $link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-color:                        theme-color("primary"); //darken($link-color, 15%) !default;
 $link-hover-decoration:                   none; //underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
@@ -250,10 +250,10 @@ $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
-
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+ 
+$border-radius:               0; //.25rem !default;
+$border-radius-lg:            0; //.3rem !default;
+$border-radius-sm:            0; //.2rem !default;
 
 $rounded-pill:                50rem !default;
 
@@ -261,8 +261,8 @@ $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
-$component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-color:      $secondary; //$white !default;
+$component-active-bg:         theme-color("primary"); //!default;
 
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
@@ -819,8 +819,8 @@ $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-bg:               theme-color("secondary"); //$gray-200 !default;
+$pagination-hover-border-color:     theme-color("secondary"); //$gray-300 !default;
 
 $pagination-active-color:           $component-active-color !default;
 $pagination-active-bg:              $component-active-bg !default;
@@ -1023,28 +1023,28 @@ $progress-bar-transition:           width .6s ease !default;
 
 // List group
 
-$list-group-color:                  null !default;
+$list-group-color:                  $primary; //null !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           $secondary; //rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
 $list-group-item-padding-y:         .75rem !default;
 $list-group-item-padding-x:         1.25rem !default;
 
-$list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-hover-bg:               $secondary; //$gray-100 !default;
+$list-group-active-color:           $primary; //$component-active-color !default;
+$list-group-active-bg:              $secondary; //$component-active-bg !default;
+$list-group-active-border-color:    $secondary; //$list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
 
-$list-group-action-color:           $gray-700 !default;
-$list-group-action-hover-color:     $list-group-action-color !default;
+$list-group-action-color:           $secondary; //$gray-700 !default;
+$list-group-action-hover-color:     $secondary; //$list-group-action-color !default;
 
-$list-group-action-active-color:    $body-color !default;
-$list-group-action-active-bg:       $gray-200 !default;
+$list-group-action-active-color:    $primary; //$body-color !default;
+$list-group-action-active-bg:       $secondary; //$gray-200 !default;
 
 
 // Image thumbnails
