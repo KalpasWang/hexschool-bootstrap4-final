@@ -1,0 +1,80 @@
+extends include/layout.pug
+
+block vars
+  - var title = '購物車'
+
+block content
+  main
+    .container.mt-5.mb-6.px-5.px-md-2
+      .row
+        .col-md-8
+          h2.text-lg.mb-3.py-3.bg-secondary.text-primary.text-center.text-bold.mx-n5.mx-md-0 您的購物車
+          ul.cart.list-unstyled
+            li.cart-item
+              .cart-first-area
+                .cart-item-image.bg-cover(style="background-image: url(https://bit.ly/2QvsT63);")
+                .cart-title-amount-area
+                  .cart-title
+                    h3.text-md.mb-0.mb-md-1 焦糖馬卡龍
+                    p.mb-0 NT$ 450
+                  .cart-amount
+                    .input-group.input-group-lg
+                      .input-group-prepend
+                        button.btn.btn-outline-secondary.text-primary -
+                      input.form-control.cart-amount-text(type="text" value="2")
+                      .input-group-append
+                        button.btn.btn-outline-secondary.text-primary +
+              .cart-second-area
+                span.text-md NT$ 900
+                i.far.fa-trash-alt.cursor-pointer
+            li.cart-item
+              .cart-first-area
+                .cart-item-image.bg-cover(style="background-image: url(https://bit.ly/2xPn7Eq);")
+                .cart-title-amount-area
+                  .cart-title
+                    h3.text-md.mb-0.mb-md-1 焦糖馬卡龍
+                    p.mb-0 NT$ 450
+                  .cart-amount
+                    .input-group.input-group-lg
+                      .input-group-prepend
+                        button.btn.btn-outline-secondary.text-primary -
+                      input.form-control.cart-amount-text(type="text" value="2")
+                      .input-group-append
+                        button.btn.btn-outline-secondary.text-primary +
+              .cart-second-area
+                span.text-md NT$ 900
+                i.far.fa-trash-alt.cursor-pointer
+            li.cart-item
+              .cart-first-area
+                .cart-item-image.bg-cover(style="background-image: url(https://bit.ly/2zKOP7w);")
+                .cart-title-amount-area
+                  .cart-title
+                    h3.text-md.mb-0.mb-md-1 焦糖馬卡龍
+                    p.mb-0 NT$ 450
+                  .cart-amount
+                    .input-group.input-group-lg
+                      .input-group-prepend
+                        button.btn.btn-outline-secondary.text-primary -
+                      input.form-control.cart-amount-text(type="text" value="2")
+                      .input-group-append
+                        button.btn.btn-outline-secondary.text-primary +
+              .cart-second-area
+                span.text-md NT$ 900
+                i.far.fa-trash-alt.cursor-pointer
+        .col-md-4
+          .bg-md-primary.text-primary.text-md-secondary.p-3.mt-4.mt-md-0
+            h2.text-lg.text-bold.text-center.border-bottom.border-secondary.py-3.pt-md-0.mb-3.bg-md-down-secondary 訂單摘要
+            .d-flex.justify-content-between
+              span 小計
+              span NT$ 2,700
+            .d-flex.justify-content-between
+              span 運費
+              span NT$ 300
+            .d-flex.justify-content-between.text-md.text-bold.mt-3
+              span 總計
+              span NT$ 3,000
+          .mx-n5.mx-md-0
+            a.btn.btn-lg.btn-block.btn-accent.text-primary(href="checkout.html") 結帳
+
+
+

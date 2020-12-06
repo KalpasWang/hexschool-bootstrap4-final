@@ -20,6 +20,10 @@
   font-size: 24px;
 }
 
+.text-md {
+  font-size: 20px;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -52,4 +56,26 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+}
+
+.bg-md-primary {
+  @include media-breakpoint-up(md) {
+    background: theme-color("primary") !important;
+  }
+}
+
+.bg-md-down-secondary {
+  @include media-breakpoint-down(sm) {
+    background: theme-color("secondary") !important;
+  }
+}
+
+.text-md-secondary {
+  @include media-breakpoint-up(md) {
+    color: theme-color("secondary") !important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
