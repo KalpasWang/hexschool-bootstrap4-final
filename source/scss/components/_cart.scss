@@ -14,6 +14,14 @@
     }
   }
 
+  &-item-sm {
+    padding-top: 15px;
+    padding-bottom: 0;
+    height: 80px;
+    border-bottom: none;
+    justify-content: flex-start;
+  }
+
   &-first-area {
     width: 100%;
     height: 118px;
@@ -36,6 +44,11 @@
     @include media-breakpoint-up(md) {
       width: 110px;
     }
+  }
+
+  &-item-sm > &-item-image {
+    width: 48%;
+    margin-right: 20px;
   }
 
   &-title-amount-area {

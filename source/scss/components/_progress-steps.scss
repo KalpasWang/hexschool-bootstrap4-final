@@ -1,0 +1,52 @@
+.progress-steps {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 0;
+  height: 100%;
+
+  & > .step {
+    border: 1px solid theme-color("secondary");
+    background: theme-color("primary");
+    width: 20px;
+    height: 20px;
+    border-radius: 500px;
+    padding: 1px;
+    z-index: 10;
+  }
+  
+  & > .step.active::before {
+    content: '';
+    background: theme-color("secondary"); 
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 500px;
+  }
+
+  & > .step.completed::before {
+    content: '\f058';
+    position: relative;
+    top: -4px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    font-weight: 900;
+    color: theme-color("secondary"); 
+    display: block;
+    border-radius: 500px;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: theme-color("secondary");
+  }
+}
