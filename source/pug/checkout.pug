@@ -1,13 +1,13 @@
 extends include/layout.pug
 
 block vars
-  - var title = '訂單'
+  - var title = '運送'
 
 block content
   main.mb-0.mb-md-6
     .container.px-0.px-md-2
       .row.justify-content-center
-        .col-md-6
+        .col-md-6.pr-0.pr-sm-2
           .bg-primary.text-secondary.p-5
             .container-fluid
               .form-row.mb-5
@@ -22,20 +22,20 @@ block content
                 .col-6
                   .form-group
                     label.h5(for="surname") 姓氏
-                    input.form-control.bg-secondary(type="text" id="surname" placeholder="王")
+                    input.form-control.bg-secondary.border-0(type="text" id="surname" placeholder="王")
                 .col-6
                   .form-group
                     label.h5(for="given-name") 名字
-                    input.form-control.bg-secondary(type="text" id="given_name" placeholder="小明")
+                    input.form-control.bg-secondary.border-0(type="text" id="given_name" placeholder="小明")
               .form-row
                 .col-12
                   .form-group
                     label.h5(for="tel") 電話
-                    input.form-control.bg-secondary(type="tel" id="tel" placeholder="0912-345-678")
+                    input.form-control.bg-secondary.border-0(type="tel" id="tel" placeholder="0912-345-678")
               label.h5(for="address") 地址
               .form-row.mb-2
                 .col-6
-                  select.custom-select.bg-secondary(id="address")
+                  select.custom-select.bg-secondary.border-0(id="address")
                     option 基隆市
                     option 台北市
                     option 新北市
@@ -55,7 +55,7 @@ block content
                     option 花蓮縣
                     option 宜蘭縣
                 .col-6
-                  select.custom-select.bg-secondary
+                  select.custom-select.bg-secondary.border-0
                     option 前金區
                     option(selected) 新興區
                     option 鹽埕區
@@ -69,9 +69,9 @@ block content
                     option 小港區
               .form-row.mb-0
                 .col-12
-                  input.form-control.bg-secondary(type="text" placeholder="幸福路 520 號")
+                  input.form-control.bg-secondary.border-0(type="text" placeholder="幸福路 520 號")
           a(href="checkout2.html").btn.btn-lg.btn-block.btn-accent.text-primary.pt-4.pb-3 下一步
-        .col-md-3.d-none.d-md-block
+        .col-lg-3.col-md-5.d-none.d-md-block
           .border.border-secondary.text-accessory.mb-4
             h2.text-lg.text-bold.text-center.py-3.bg-secondary 訂單摘要
             .px-4.py-3

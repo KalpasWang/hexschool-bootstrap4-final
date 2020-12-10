@@ -1,0 +1,21 @@
+extends include/layout.pug
+
+block vars
+  - var title = '付款成功'
+  - var current = '付款成功'
+
+block content
+  main
+    .container.px-md-down-0
+      .banner.banner-success.mb-md-6
+        .banner-main-image(style="background-image: url(https://bit.ly/2P7GhNd)")
+        .banner-central-area(style="width: 300px;")
+          ul.progress-steps.progress-steps-primary
+            li.step.completed 
+            li.step.completed
+            li.step.completed
+          img.d-block.mx-auto.my-5.pb-4(src="./img/lg-付款成功.svg" alt="付款成功" width="190")
+          a(href="index.html").btn.btn-lg.btn-block.btn-accent.text-primary.text-bold.py-3.d-none.d-md-block 繼續逛逛
+      a(href="index.html").btn.btn-lg.btn-block.btn-accent.text-primary.text-bold.py-3.d-block.d-md-none 繼續逛逛
+
+

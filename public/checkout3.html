@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>運送 | Sweetaste</title>
+    <title>訂單資訊確認 | Sweetaste</title>
     <link rel="shortcut icon" href="./favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="css/all.css"/>
@@ -38,89 +38,54 @@
       <div class="container px-0 px-md-2">
         <div class="row justify-content-center">
           <div class="col-md-6 pr-0 pr-sm-2">
-            <div class="bg-primary text-secondary p-5">
+            <div class="bg-primary text-secondary px-1 px-sm-5 py-5">
               <div class="container-fluid">
                 <div class="form-row mb-5">
                   <div class="col-6">
-                    <h2>運送</h2>
+                    <h2>訂單資訊確認</h2>
                   </div>
                   <div class="col-6">
                     <ul class="progress-steps">
-                      <li class="step active"> </li>
-                      <li class="step"></li>
-                      <li class="step"></li>
+                      <li class="step completed"> </li>
+                      <li class="step completed"></li>
+                      <li class="step active"></li>
                     </ul>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="h5" for="surname">姓氏</label>
-                      <input class="form-control bg-secondary border-0" type="text" id="surname" placeholder="王"/>
-                    </div>
+                <div class="form-row form-group">
+                  <label class="col-2" for="credit-card">卡號</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="text" id="credit-card" value="1234 5678 9012 6543" readonly="readonly"/>
                   </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="h5" for="given-name">名字</label>
-                      <input class="form-control bg-secondary border-0" type="text" id="given_name" placeholder="小明"/>
-                    </div>
+                  <label class="col-2" for="card-name">持卡人</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="text" id="card-name" value="Wei Hang Wang" readonly="readonly"/>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label class="h5" for="tel">電話</label>
-                      <input class="form-control bg-secondary border-0" type="tel" id="tel" placeholder="0912-345-678"/>
-                    </div>
+                  <label class="col-2" for="date">到期日</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="text" id="date" value="12/26" readonly="readonly"/>
+                  </div>
+                  <label class="col-2" for="code">安全碼</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="number" id="code" value="123" readonly="readonly"/>
                   </div>
                 </div>
-                <label class="h5" for="address">地址</label>
-                <div class="form-row mb-2">
-                  <div class="col-6">
-                    <select class="custom-select bg-secondary border-0" id="address">
-                      <option>基隆市</option>
-                      <option>台北市</option>
-                      <option>新北市</option>
-                      <option>桃園市</option>
-                      <option>新竹縣</option>
-                      <option>新竹市</option>
-                      <option>苗栗縣</option>
-                      <option>台中市</option>
-                      <option>彰化縣</option>
-                      <option>南投縣</option>
-                      <option>雲林縣</option>
-                      <option>嘉義縣</option>
-                      <option>台南市</option>
-                      <option selected="selected">高雄市</option>
-                      <option>屏東縣</option>
-                      <option>台東縣</option>
-                      <option>花蓮縣</option>
-                      <option>宜蘭縣</option>
-                    </select>
+                <div class="form-row form-group">
+                  <label class="col-2" for="name">名字</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="text" id="name" value="王小明"/>
                   </div>
-                  <div class="col-6">
-                    <select class="custom-select bg-secondary border-0">
-                      <option>前金區</option>
-                      <option selected="selected">新興區</option>
-                      <option>鹽埕區</option>
-                      <option>左營區</option>
-                      <option>楠梓區</option>
-                      <option>鼓山區</option>
-                      <option>旗津區</option>
-                      <option>苓雅區</option>
-                      <option>三民區</option>
-                      <option>前鎮區</option>
-                      <option>小港區</option>
-                    </select>
+                  <label class="col-2" for="address">地址</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="text" value="高雄市新興區幸福路 520 號" readonly="readonly"/>
                   </div>
-                </div>
-                <div class="form-row mb-0">
-                  <div class="col-12">
-                    <input class="form-control bg-secondary border-0" type="text" placeholder="幸福路 520 號"/>
+                  <label class="col-2" for="tel">電話</label>
+                  <div class="col-10">
+                    <input class="form-control form-control-sm bg-secondary border-0" type="tel" id="tel" value="0912-345-678"/>
                   </div>
                 </div>
               </div>
-            </div><a class="btn btn-lg btn-block btn-accent text-primary pt-4 pb-3" href="checkout2.html">下一步</a>
+            </div><a class="btn btn-lg btn-block btn-accent text-primary pt-4 pb-3" href="success.html">確認</a>
           </div>
           <div class="col-lg-3 col-md-5 d-none d-md-block">
             <div class="border border-secondary text-accessory mb-4">
